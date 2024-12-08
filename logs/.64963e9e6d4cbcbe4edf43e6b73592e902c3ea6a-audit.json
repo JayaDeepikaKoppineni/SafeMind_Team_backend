@@ -14,6 +14,11 @@
             "date": 1732468543443,
             "name": "logs\\ReqRes_2024-11-24.log",
             "hash": "6e8e4b1b04cc9d7e8356adfbed51fbdafb83cec2d2697917eff876268477f277"
+        },
+        {
+            "date": 1733646526886,
+            "name": "logs\\ReqRes_2024-12-08.log",
+            "hash": "2354688b43be49604bcb84488ff62197d65807a170594d0783ac846daaba7fbe"
         }
     ],
     "hashType": "sha256"

@@ -1,0 +1,54 @@
+2024-12-08 02:28:52 [34mdebug[39m: 	safemind APP API server is listening at http://:::8000
+2024-12-08 03:05:54 [34mdebug[39m: 	safemind APP API server is listening at http://:::8000
+2024-12-08 03:28:04 [34mdebug[39m: 	safemind APP API server is listening at http://:::8000
+2024-12-08 07:34:25 [34mdebug[39m: 	safemind APP API server is listening at http://:::8000
+2024-12-08 07:42:45 [34mdebug[39m: 	safemind APP API server is listening at http://:::8000
+2024-12-08 07:50:48 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:50:48 [32minfo[39m: 	/
+2024-12-08 07:50:48 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:50:48 [32minfo[39m: 	/favicon.ico
+2024-12-08 07:55:17 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:55:17 [32minfo[39m: 	/safemind_create_account
+2024-12-08 07:55:17 [31merror[39m: 	Error While Getting Meeting Data  ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+2024-12-08 07:56:38 [34mdebug[39m: 	safemind APP API server is listening at http://:::8000
+2024-12-08 07:56:41 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:56:41 [32minfo[39m: 	/safemind_create_account
+2024-12-08 07:56:41 [32minfo[39m: 	SELECT * FROM safemind_login where email="User6506";
+2024-12-08 07:56:41 [32minfo[39m: 	insert into safemind_login (name,email,password,university,role,streams,personal_type,status) 
+          values("User6506","User6506","","","","sss","Shopper","1");
+2024-12-08 07:56:41 [32minfo[39m: 	select * from safemind_login where id=9;
+2024-12-08 07:56:43 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:56:43 [32minfo[39m: 	/safemind_post_all
+2024-12-08 07:56:43 [32minfo[39m: 	SELECT * FROM safemind_posts;
+2024-12-08 07:56:44 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:56:44 [32minfo[39m: 	/Group_get_all
+2024-12-08 07:56:44 [32minfo[39m: 	SELECT DISTINCT safemind_groupchat_create.*,safemind_login.role,safemind_login.name
+  FROM safemind_groupchat_create
+  JOIN safemind_login  ON safemind_groupchat_create.userid = safemind_login.name order by id desc
+2024-12-08 07:56:53 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:56:53 [32minfo[39m: 	/Group_get_all
+2024-12-08 07:56:53 [32minfo[39m: 	SELECT DISTINCT safemind_groupchat_create.*,safemind_login.role,safemind_login.name
+  FROM safemind_groupchat_create
+  JOIN safemind_login  ON safemind_groupchat_create.userid = safemind_login.name order by id desc
+2024-12-08 07:57:20 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:57:20 [32minfo[39m: 	/createGroup
+2024-12-08 07:57:20 [32minfo[39m: 	insert into safemind_groupchat_create(groupd_name,streams,class_desc,class_date,class_time,userid,university,group_number,currenttimestamp) values('asdasd','asdasd','sss','12/12/2024','7:56:00 AM','User6506','','685718143047','2024/12/08-07:57:20');
+2024-12-08 07:57:20 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:57:20 [32minfo[39m: 	/Group_get_all
+2024-12-08 07:57:20 [32minfo[39m: 	SELECT DISTINCT safemind_groupchat_create.*,safemind_login.role,safemind_login.name
+  FROM safemind_groupchat_create
+  JOIN safemind_login  ON safemind_groupchat_create.userid = safemind_login.name order by id desc
+2024-12-08 07:57:25 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:57:25 [32minfo[39m: 	/reg_peronality_chart
+2024-12-08 07:57:25 [32minfo[39m: 	select * from safemind_login where university=""
+2024-12-08 07:57:32 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:57:32 [32minfo[39m: 	/deleteGroup/10
+2024-12-08 07:57:32 [32minfo[39m: 	DELETE FROM safemind_groupchat_create WHERE id = "10" and userid="User6506";
+2024-12-08 07:57:32 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:57:32 [32minfo[39m: 	/safemind_post_all
+2024-12-08 07:57:32 [32minfo[39m: 	SELECT * FROM safemind_posts;
+2024-12-08 07:57:32 [32minfo[39m: 	Requested URL : 
+2024-12-08 07:57:32 [32minfo[39m: 	/Group_get_all
+2024-12-08 07:57:32 [32minfo[39m: 	SELECT DISTINCT safemind_groupchat_create.*,safemind_login.role,safemind_login.name
+  FROM safemind_groupchat_create
+  JOIN safemind_login  ON safemind_groupchat_create.userid = safemind_login.name order by id desc
